@@ -1,3 +1,4 @@
 const logger = require("./logger");
 
-logger.info("user logged in", { userId: "12345" });
+logger.info("service started");
+logger.info("user logged in {userId}", { userId: "12345" });
