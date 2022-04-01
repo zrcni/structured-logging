@@ -27,3 +27,13 @@ Log entries:
 ## Search logs by metadata fields in Kibana
 
 ![kibana](./kibana.png)
+
+## Kibana metrics
+
+Unique users who have logged in recently
+
+![kibana_uniq_users_count](./kibana_uniq_users_count.png)
+
+Users' logged in count
+
+![kibana_users_logged_in_count](./kibana_users_logged_in_count.png)
