@@ -6,6 +6,27 @@ Run webapp once to generate logs to elasticsearch
 
 then go to `Settings > Index Patterns > Create index pattern` in Kibana and create an index pattern for `webapp-service-logs`
 
+
+---
+
+[./webapp/src/index.js](./webapp/src/index.js)
+
+```js
+const logger = require("./logger")
+
+logger.info("service started")
+
+logger.info("user logged in {userId}", { userId: "12345" })
+logger.info("user logged in {userId}", { userId: "56789" })
+logger.info("user logged in {userId}", { userId: "34567" })
+
+logger.info("user logged out {userId}", { userId: "12345" })
+logger.info("user logged out {userId}", { userId: "56789" })
+logger.info("user logged out {userId}", { userId: "34567" })
+
+logger.info("service stopped")
+```
+
 ---
 
 Log entries:
